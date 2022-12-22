@@ -1,10 +1,8 @@
-ARG RESTREAMER_UI_IMAGE=datarhei/restreamer-ui:latest
-
 ARG CORE_IMAGE=datarhei/base:alpine-core-latest
 
 ARG FFMPEG_IMAGE=datarhei/base:alpine-ffmpeg-latest
 
-FROM $RESTREAMER_UI_IMAGE as restreamer-ui
+FROM a017e975876d as restreamer-ui
 
 FROM $CORE_IMAGE as core
 
